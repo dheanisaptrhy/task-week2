@@ -115,7 +115,7 @@ function firstProjectContent(){
     <div class="project">
                 <a href="detail-project.html">
                     <div class="pict">
-                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                        <image class="pict-class" src="assets/banner.jpg"/>
                     </div>
                     <div class="header-project">
                         <h3>Dumbways Mobile App - 2021</h3>
@@ -141,7 +141,7 @@ function firstProjectContent(){
             <div class="project">
                 <a href="detail-project.html">
                     <div class="pict">
-                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                        <image class="pict-class" src="assets/lattecode.png"/>
                     </div>
                     <div class="header-project">
                         <h3>Dumbways Mobile App - 2021</h3>
@@ -167,7 +167,7 @@ function firstProjectContent(){
             <div class="project">
                 <a href="detail-project.html">
                     <div class="pict">
-                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                        <image class="pict-class" src="assets/concertmusic.png"/>
                     </div>
                     <div class="header-project">
                         <h3>Dumbways Mobile App - 2021</h3>
@@ -193,7 +193,7 @@ function firstProjectContent(){
             <div class="project">
                 <a href="detail-project.html">
                     <div class="pict">
-                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                        <image class="pict-class" src="assets/uiux.png"/>
                     </div>
                     <div class="header-project">
                         <h3>Dumbways Mobile App - 2021</h3>
@@ -219,7 +219,7 @@ function firstProjectContent(){
             <div class="project">
                 <a href="detail-project.html">
                     <div class="pict">
-                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                        <image class="pict-class" src="assets/banner.jpg"/>
                     </div>
                     <div class="header-project">
                         <h3>Dumbways Mobile App - 2021</h3>
