@@ -1,0 +1,282 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* ---------------------------------------------------------------------------------- */
+/* Navigation Bar */
+nav{
+    display: flex;
+    height: 7vh;
+    background-color: #f4f3f3;
+    flex-direction: row;
+}
+nav div{
+    display: flex;
+    flex:50%;
+    align-items: center;
+}
+
+.header-left{
+    padding-left: 90px;
+}
+
+.header-right{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 90px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin-left: 40px;
+}
+
+nav ul li{
+    display: inline;
+    margin-left: 40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+nav ul .mproject{
+    font-weight: 700;
+    color:#4c4c98;
+}
+
+nav .header-right a{
+    font-size: 15px ;
+    background-color: #4c4c98;
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+}
+
+/* ------------------------------------------------------------------- */
+/* First Container */
+a{
+    text-decoration: none;
+    color: black;
+}
+.first-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gainsboro;
+    height: 93vh;
+}
+
+.form-container .header{
+    text-align: center;
+    margin:15px 0;
+}
+.form-container form{
+    text-align: left;
+    width: 500px;
+}
+
+.labels, .labels-technologies{
+    margin-bottom: 20px;
+}
+
+.labels label, .date-container label{
+    font-size: 20px;
+    font-weight: 500;
+}
+.labels input[type="text"], input[type="date"], input[type="file"], textarea{
+    width: 100%;
+    border-radius: 5px;
+    box-sizing: border-box;
+    padding: 8px;
+    margin-top: 5px;
+    border:none;
+    outline:none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.labels textarea{
+    resize:none;
+    height:100px;
+}
+
+form .date-container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.start-date{
+    margin-right: 10px;
+}
+
+.labels-technologies{
+    display: grid ;
+    grid-template-columns: 50% 50%;
+    row-gap: 20px;
+    column-gap: 20px;
+}
+/* checkbox */
+.tech-container p{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+input[type="checkbox"]{
+    display: none;
+}
+
+.checkbox-label{
+    display: inline-flex;
+    cursor: pointer;
+}
+
+.checkbox_box{
+    width: 20px;
+    height: 20px;
+    /* background-color: white; */
+    /* border: 2px solid #cccc; */
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox_box::after{
+    content: '\2714';
+    color: gainsboro;
+}
+
+input[type="checkbox"]:checked + .checkbox_box{
+    background: #4c4c98;
+    background-color: #4c4c98;
+}
+
+.checkbox-label span{
+    display: flex;
+    align-items: center;
+}
+
+/* file */
+.input-project-image-group {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    background: #f4f3f3;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.input-project-image-group .chose {
+    font-size: 15px;
+    font-weight: 400;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #4c4c98;
+}
+  
+.input-project-image-group label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+
+/* button submit */
+.button-submit{
+    float: right;
+}
+.button-submit button{
+    padding: 5px 30px 7px 30px;
+    background-color: black;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 20px;
+}
+.button-submit button:hover{
+    background-color: #4c4c98;
+}
+
+/* ------------------------------------------------------------------------ */
+/* second-container */
+.second-container .header{
+    text-align: center;
+    margin:20px 0;
+}
+
+.project-container{
+    display: grid ;
+    grid-template-columns: 30% 30% 30%;
+    row-gap: 20px;
+    column-gap: 20px;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.project{
+    padding: 20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    /* width: 30%; */
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.pict-class{
+    width: 100%;
+    border-radius: 5px;
+}
+.project .header-project{
+    margin: 10px 0 15px 0;
+}
+.project .header-project p{
+    color: grey;
+    font-size: 15px;
+}
+
+.project .content{
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+.project .icon-tech{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.icon-tech .fab{
+    margin-right: 10px;
+}
+
+.button-group{
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.button-group button{
+    width: 50%;
+    padding: 4px 0;
+    background-color: black;
+    color: white;
+    font-weight: 500 ;
+    border: none;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button-group button:hover{
+    background-color: #4c4c98;
+
+}
+.button-group .btn-edit{
+    margin-right: 5px;
+}
+

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>My Project</title>
+    <link rel="stylesheet" href="myproject.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <nav>
+        <div class="header-left">
+            <a href="index2.html">
+                <img src="assets/logo.png">
+            </a>
+            <ul>
+                <li><a href="index2.html" class="home" >Home</a></li>
+                <li><a href="myproject.html" class="mproject">My Project</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <a href="contact.html">Contact Me</a>
+        </div>
+    </nav>
+    
+    <div class="first-container">
+        <div class="form-container">
+            <div class="header">
+                <h1>Add My Project</h1>
+            </div>
+            <form name="formProject" onsubmit="addProject(event)">
+                <div class="labels">
+                    <label for="input-name">Project Name</label>
+                    <input type="text" id ="input-name"/>
+                </div>
+                <div class="date-container">
+                    <div class="start-date">
+                        <label for="input-start-date">Start Date</label>
+                        <input type="date" id ="input-start-date"/>
+                    </div>
+                    <div class="end-date">
+                        <label for="input-end-date">End Date</label>
+                        <input type="date" id ="input-end-date"/>
+                    </div>
+                </div>
+                <div class="labels">
+                    <label for="input-description">Description</label>
+                    <textarea id="input-description"></textarea>
+                </div>
+                <div class="tech-container">
+                    <p>Technologies</p>
+                    <div class="labels-technologies">
+                        <label class="checkbox-label" for="input-nodejs">
+                            <input type="checkbox" name="check" id ="input-nodejs" value="nodejs"/>
+                            <div class="checkbox_box"></div>
+                            <span class="label-text">Node JS</span>
+                        </label>  
+                        <label class="checkbox-label" for="input-nextjs">
+                            <input type="checkbox" name="check" id ="input-nextjs" value="nextjs"/>
+                            <div class="checkbox_box"></div>
+                            <span>Next JS</span>
+                        </label>
+                        <label class="checkbox-label" for="input-reactjs">
+                            <input type="checkbox" name="check" id ="input-reactjs" value="reactjs"/>
+                            <div class="checkbox_box"></div>
+                            <span>React JS</span>
+                        </label>
+                        <label class="checkbox-label" for="input-typescript">
+                            <input type="checkbox" name="check" id ="input-typescript" value="typescript"/>
+                            <div class="checkbox_box"></div>
+                            <span>TypeScript</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="labels">
+                    <label>Upload Image</label>
+                    <div class="input-project-image-group">
+                      <label for="input-project-image">
+                        <p class="chose">Choose</p>
+                        <img src="assets/file.png" alt="file" />
+                      </label>
+                      <input type="file" id="input-project-image" hidden />
+                    </div>
+                </div>
+                <div class="button-submit">
+                  <button>submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="second-container">
+        <div class="header">
+            <h1>My Project</h1>
+        </div>
+        <div class="project-container" id="project-content">
+            <div class="project">
+                <a href="detail-project.html">
+                    <div class="pict">
+                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                    </div>
+                    <div class="header-project">
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p>Durasi : 3 bulan</p>
+                    </div>
+                    <div class="content">
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                    </div>
+                    <div class="icon-tech">
+                        <span><i class="fab fa-node-js fa-2x"></i></span>
+                        <span><i class="fab fa-react fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                    </div>
+        
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="detail-project.html">
+                    <div class="pict">
+                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                    </div>
+                    <div class="header-project">
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p>Durasi : 3 bulan</p>
+                    </div>
+                    <div class="content">
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                    </div>
+                    <div class="icon-tech">
+                        <span><i class="fab fa-node-js fa-2x"></i></span>
+                        <span><i class="fab fa-react fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                    </div>
+        
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="detail-project.html">
+                    <div class="pict">
+                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                    </div>
+                    <div class="header-project">
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p>Durasi : 3 bulan</p>
+                    </div>
+                    <div class="content">
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                    </div>
+                    <div class="icon-tech">
+                        <span><i class="fab fa-node-js fa-2x"></i></span>
+                        <span><i class="fab fa-react fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                    </div>
+        
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="detail-project.html">
+                    <div class="pict">
+                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                    </div>
+                    <div class="header-project">
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p>Durasi : 3 bulan</p>
+                    </div>
+                    <div class="content">
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                    </div>
+                    <div class="icon-tech">
+                        <span><i class="fab fa-node-js fa-2x"></i></span>
+                        <span><i class="fab fa-react fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                    </div>
+        
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </a>
+            </div>
+
+            <div class="project">
+                <a href="detail-project.html">
+                    <div class="pict">
+                        <image class="pict-class" src="assets/20211228_173015.jpg"/>
+                    </div>
+                    <div class="header-project">
+                        <h3>Dumbways Mobile App - 2021</h3>
+                        <p>Durasi : 3 bulan</p>
+                    </div>
+                    <div class="content">
+                        <p>App that used for dumbways student, it was deployed and can downloaded on playstore. Happy download</p>
+                    </div>
+                    <div class="icon-tech">
+                        <span><i class="fab fa-node-js fa-2x"></i></span>
+                        <span><i class="fab fa-react fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                        <span><i class="fab fa-js-square fa-2x"></i></span>
+                    </div>
+        
+                    <div class="button-group">
+                        <button class="btn-edit">Edit</button>
+                        <button class="btn-delete">Delete</button>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </div>
+<script src="myproject.js"></script>
+</body>
+</html>
